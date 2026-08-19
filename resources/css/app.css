@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-google: 'Product Sans Regular', sans-serif;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Product Sans Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
+    }
+}
+
+@layer components{
+    .content_card {
+        @apply bg-slate-100/20 transition w-11/12 p-10 rounded-lg drop-shadow text-xl;
+    }
+    .social_icons {
+        @apply text-black text-2xl;
+    }
+    .nav_active {
+        @apply bg-[#2C4981] px-3 py-1 rounded-md shadow-md;
+    }
+    .nav_empty {
+        @apply text-black px-3 py-1;
+    }
+}
