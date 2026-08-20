@@ -10,5 +10,10 @@
                 Aboot
             </a>
         </li>
+        <li class="{{ (request()->is('login*')) ? 'nav_active' : 'nav_empty' }}">
+            <a href="/login">
+                Login
+            </a>
+        </li>
     </ul>
 </nav>

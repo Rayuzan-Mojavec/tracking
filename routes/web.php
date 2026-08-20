@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('aboot');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
