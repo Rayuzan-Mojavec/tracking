@@ -23,10 +23,10 @@
     @endif
 </head>
 
-<body id="tres" class="font-google flex gap-5 flex-col justify-center content-center text-center items-center bg-gradient-to-r from-[#2C4981] to-[#d0d0d0]">
+<body id="tres" class="font-google flex gap-5 flex-col justify-center content-center text-center items-center bg-linear-to-r from-red-500 to-[#d0d0d0]">
     @include('templet.navbar')
     @yield('content_room')
-    @include('templet.footer')
+
 </body>
 
 </html>

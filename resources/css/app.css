@@ -21,7 +21,7 @@
         @apply text-black text-2xl;
     }
     .nav_active {
-        @apply bg-[#2C4981] px-3 py-1 rounded-md shadow-md;
+        @apply bg-red-500 px-3 py-1 rounded-md shadow-md;
     }
     .nav_empty {
         @apply text-black px-3 py-1;

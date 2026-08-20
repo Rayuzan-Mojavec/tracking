@@ -10,10 +10,22 @@
                 Aboot
             </a>
         </li>
+        @guest
         <li class="{{ (request()->is('login*')) ? 'nav_active' : 'nav_empty' }}">
             <a href="/login">
                 Login
             </a>
         </li>
+        @else
+        <li class="nav_empty">
+            <p class="text-gray-500 font-bold">{{ auth()->user()->username }}</p>
+        </li>
+        <li class="nav_empty">
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" class="hover:cursor-pointer">Logout</button>
+            </form>
+        </li>
+        @endguest
     </ul>
 </nav>
